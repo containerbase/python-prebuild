@@ -1,9 +1,9 @@
 {
-  "name": "containerbase-python",
+  "name": "containerbase-python-prebuild",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "repository": "https://github.com/containerbase/python.git",
+  "repository": "https://github.com/containerbase/python-prebuild.git",
   "author": "Michael Kriese <michael.kriese@visualon.de>",
   "scripts": {
     "lint": "run-s prettier",

@@ -1,6 +1,6 @@
-![build](https://github.com/containerbase/python/actions/workflows/build.yml/badge.svg)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/containerbase/python)
-![GitHub](https://img.shields.io/github/license/containerbase/python)
+![build](https://github.com/containerbase/python-prebuild/actions/workflows/build.yml/badge.svg)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/containerbase/python-prebuild)
+![GitHub](https://img.shields.io/github/license/containerbase/python-prebuild)
 
 # containerbase Python releases
 
