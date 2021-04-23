@@ -6,8 +6,8 @@ ARG DISTRO
 #--------------------------------------
 # base images
 #--------------------------------------
-FROM ubuntu:bionic@sha256:122f506735a26c0a1aff2363335412cfc4f84de38326356d31ee00c2cbe52171 as build-bionic
-FROM ubuntu:focal@sha256:3c9c713e0979e9bd6061ed52ac1e9e1f246c9495aa063619d9d695fb8039aa1f as build-focal
+FROM ubuntu:bionic@sha256:538529c9d229fb55f50e6746b119e899775205d62c0fc1b7e679b30d02ecb6e8 as build-bionic
+FROM ubuntu:focal@sha256:cf31af331f38d1d7158470e095b132acd126a7180a54f263d386da88eb681d93 as build-focal
 
 
 #--------------------------------------
