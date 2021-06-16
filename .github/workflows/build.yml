@@ -31,7 +31,7 @@ jobs:
           dry-run: ${{github.ref != 'refs/heads/main'}}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/upload-artifact@v2.2.3
+      - uses: actions/upload-artifact@v2.2.4
         with:
           name: ${{ env.DISTRO }}
           path: .cache/*.tar.xz
