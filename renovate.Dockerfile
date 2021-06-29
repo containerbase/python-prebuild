@@ -10,7 +10,7 @@ FROM scratch
 ENV PYTHON_VERSION=3.6.14
 
 # renovate: datasource=docker depName=python versioning=docker
-ENV PYTHON_VERSION=3.7.10
+ENV PYTHON_VERSION=3.7.11
 
 # renovate: datasource=docker depName=python versioning=docker
 ENV PYTHON_VERSION=3.8.10
