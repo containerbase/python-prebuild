@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         distro: [focal, bionic]
-        arch: [x86_64]
+        arch: [x86_64, aarch64]
 
     env:
       DISTRO: ${{ matrix.distro }} # build target, name required by binary-builder
