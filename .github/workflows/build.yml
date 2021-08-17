@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # renovate: tag=v2.3.4
 
       - name: binary-builder
-        uses: renovatebot/internal-tools@bd5a63ef08a70fb4484fb7c840e0a2338060f0fb # renovate: tag=v1.7.9
+        uses: renovatebot/internal-tools@047612fed0c48a57d68522587ad2b36c4783a260 # renovate: tag=v1.8.0
         with:
           command: binary-builder
           dry-run: ${{github.ref != 'refs/heads/main'}}
