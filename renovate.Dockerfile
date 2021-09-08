@@ -12,7 +12,7 @@ ENV PYTHON_VERSION=3.6.15
 
 # EOL 2023-06-27
 # renovate: datasource=docker depName=python versioning=docker
-ENV PYTHON_VERSION=3.7.11
+ENV PYTHON_VERSION=3.7.12
 
 # EOL 2024-10
 # renovate: datasource=docker depName=python versioning=docker
