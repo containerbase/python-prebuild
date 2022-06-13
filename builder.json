@@ -3,6 +3,6 @@
   "depName": "python",
   "datasource": "docker",
   "versioning": "docker",
-  "startVersion": "3.6.15",
+  "startVersion": "3.7.0",
   "ignoredVersions": []
 }
