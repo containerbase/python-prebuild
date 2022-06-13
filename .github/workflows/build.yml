@@ -7,7 +7,7 @@ on:
       - 'renovate/**'
 
   pull_request:
-  
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
   cancel-in-progress: true
@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        distro: [focal, bionic]
+        distro: [jammy, focal, bionic]
         arch: [x86_64]
 
     env:
