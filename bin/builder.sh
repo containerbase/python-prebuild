@@ -4,7 +4,8 @@ set -e
 
 VERSION=${1}
 
-CODENAME=$(. /etc/os-release && echo ${VERSION_CODENAME})
+# shellcheck disable=SC1091
+CODENAME=$(. /etc/os-release && echo "${VERSION_CODENAME}")
 
 NAME=python
 ARCH=$(uname -p)
@@ -15,10 +16,10 @@ if [[ "${DEBUG}" == "true" ]]; then
 fi
 
 echo "Building ${NAME} ${VERSION} for ${CODENAME}-${ARCH}"
-python-build ${BUILD_ARGS} ${VERSION} /usr/local/${NAME}/${VERSION}
+python-build ${BUILD_ARGS} "${VERSION}" "/usr/local/${NAME}/${VERSION}"
 
 
-/usr/local/${NAME}/${VERSION}/bin/python -v
+"/usr/local/${NAME}/${VERSION}/bin/python" -v
 
 echo "Compressing ${NAME} ${VERSION} for ${CODENAME}-${ARCH}"
-tar -cJf /cache/${NAME}-${VERSION}-${CODENAME}-${ARCH}.tar.xz -C /usr/local/${NAME} ${VERSION}
+tar -cJf "/cache/${NAME}-${VERSION}-${CODENAME}-${ARCH}.tar.xz" -C /usr/local/${NAME} "${VERSION}"
