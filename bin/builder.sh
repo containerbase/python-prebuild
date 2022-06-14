@@ -45,7 +45,7 @@ if [[ ! -f "/usr/local/share/python-build/${VERSION}" ]]; then
 
   cp "/usr/local/share/python-build/$oldVersion" "/usr/local/share/python-build/${VERSION}"
   sed -i "s/Python-${oldVersion}/Python-${VERSION}/g" "/usr/local/share/python-build/${VERSION}"
-  sed -i "s#Python/${oldVersion}#Python/${VERSION}#g" "/usr/local/share/python-build/${VERSION}"
+  sed -i "s#python/${oldVersion}#python/${VERSION}#g" "/usr/local/share/python-build/${VERSION}"
   sed -i -E 's/#[a-z0-9]+"/"/' "/usr/local/share/python-build/${VERSION}"
 fi
 
