@@ -4,5 +4,5 @@
   "datasource": "docker",
   "versioning": "docker",
   "startVersion": "3.7.0",
-  "ignoredVersions": []
+  "ignoredVersions": ["3.7.3"]
 }
