@@ -1,6 +1,8 @@
 #-------------------------
 # renovate rebuild trigger
-# Check https://www.python.org/downloads/
+# Check:
+# - https://www.python.org/downloads/
+# - https://devguide.python.org/versions/#supported-versions
 #-------------------------
 
 # makes lint happy
