@@ -29,7 +29,7 @@ jobs:
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
 
       - name: binary-builder
-        uses: renovatebot/internal-tools@409dc89a2117bffef282eab5d7cbffdffc4d1d99 # v1.14.12
+        uses: renovatebot/internal-tools@7778512bff496865804bf1c70d9c925defcb697c # v1.14.13
         with:
           command: binary-builder
           dry-run: ${{github.ref != 'refs/heads/main'}}
