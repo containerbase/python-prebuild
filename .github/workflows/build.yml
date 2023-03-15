@@ -29,7 +29,7 @@ jobs:
       ARCH: ${{ matrix.arch }} # build target, name required by binary-builder
 
     steps:
-      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
+      - uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
 
       - name: binary-builder
         uses: renovatebot/internal-tools@c1d6f949a65c2388101e357ff36d7b960ae1735f # v1.15.7
