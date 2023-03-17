@@ -1,13 +1,13 @@
 #--------------------------------------
 # Ubuntu flavor
 #--------------------------------------
-ARG DISTRO
+ARG DISTRO=focal
 
 #--------------------------------------
 # base images
 #--------------------------------------
-FROM ubuntu:bionic@sha256:139b3846cee2e63de9ced83cee7023a2d95763ee2573e5b0ab6dea9dfbd4db8f as build-bionic
-FROM ubuntu:focal@sha256:aba80b77e27148d99c034a987e7da3a287ed455390352663418c0f2ed40417fe as build-focal
+FROM ubuntu:focal@sha256:9fa30fcef427e5e88c76bc41ad37b7cc573e1d79cecb23035e413c4be6e476ab as build-focal
+FROM ubuntu:jammy@sha256:2adf22367284330af9f832ffefb717c78239f6251d9d0f58de50b86229ed1427 as build-jammy
 
 
 #--------------------------------------

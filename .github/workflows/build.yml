@@ -8,30 +8,38 @@ on:
 
   pull_request:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        distro: [focal, bionic]
-        arch: [x86_64, aarch64]
+        distro:
+          - focal
+          - jammy
+        arch:
+          - x86_64
+          - aarch64
 
     env:
       DISTRO: ${{ matrix.distro }} # build target, name required by binary-builder
       ARCH: ${{ matrix.arch }} # build target, name required by binary-builder
 
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
 
       - name: binary-builder
-        uses: renovatebot/internal-tools@v1.7.1
+        uses: containerbase/internal-tools@c1d6f949a65c2388101e357ff36d7b960ae1735f # v1.15.7
         with:
           command: binary-builder
           dry-run: ${{github.ref != 'refs/heads/main'}}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/upload-artifact@v2.2.4
+      - uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
         with:
           name: ${{ env.DISTRO }}
           path: .cache/*.tar.xz

@@ -1,10 +1,10 @@
-![build](https://github.com/containerbase/python-prebuild/actions/workflows/build.yml/badge.svg)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/containerbase/python-prebuild)
-![GitHub](https://img.shields.io/github/license/containerbase/python-prebuild)
-
 # containerbase Python releases
 
-Prebuild Python releases used by [containerbase/buildpack](https://github.com/containerbase/buildpack).
+[![build](https://github.com/containerbase/python-prebuild/actions/workflows/build.yml/badge.svg)](https://github.com/containerbase/python-prebuild/actions/workflows/build.yml?query=branch%3Amain)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/containerbase/python-prebuild)
+![License: MIT](https://img.shields.io/github/license/containerbase/python-prebuild)
+
+Prebuild Python releases used by [containerbase/base](https://github.com/containerbase/base).
 
 ## Local development
 
@@ -24,8 +24,8 @@ docker run --rm -it -v ${PWD}/.cache:/cache -e DEBURG=true builder 3.9.1
 
 Optional environment variables
 
-| Name        | Description                                                   | Default   |
-| ----------- | ------------------------------------------------------------- | --------- |
-| `DISTRO`    | Set an ubuntu base distro, `focal` and `bionic` are supported | `focal`   |
-| `APT_PROXY` | Set an APT http proxy for installing build deps               | `<empty>` |
-| `DEBUG`     | Show verbose php build output                                 | `<empty>` |
+| Name        | Description                                                  | Default   |
+| ----------- | ------------------------------------------------------------ | --------- |
+| `DISTRO`    | Set an ubuntu base distro, `focal` and `jammy` are supported | `focal`   |
+| `APT_PROXY` | Set an APT http proxy for installing build deps              | `<empty>` |
+| `DEBUG`     | Show verbose php build output                                | `<empty>` |
