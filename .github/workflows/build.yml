@@ -23,6 +23,7 @@ jobs:
           - jammy
         arch:
           - x86_64
+          - aarch64
 
     env:
       DISTRO: ${{ matrix.distro }} # build target, name required by binary-builder
