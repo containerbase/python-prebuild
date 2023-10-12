@@ -8,10 +8,6 @@
 # makes lint happy
 FROM scratch
 
-# EOL 2023-06-27
-# renovate: datasource=docker depName=python versioning=docker
-ENV PYTHON_VERSION=3.7.17
-
 # EOL 2024-10
 # renovate: datasource=docker depName=python versioning=docker
 ENV PYTHON_VERSION=3.8.18
@@ -27,3 +23,7 @@ ENV PYTHON_VERSION=3.10.13
 # EOL 2027-10
 # renovate: datasource=docker depName=python versioning=docker
 ENV PYTHON_VERSION=3.11.6
+
+# EOL 2023-10
+# renovate: datasource=docker depName=python versioning=docker
+ENV PYTHON_VERSION=3.12.0
