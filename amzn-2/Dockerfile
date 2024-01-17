@@ -1,4 +1,4 @@
-FROM amazonlinux:2
+FROM amazonlinux:2@sha256:c7bb98aab16b51fdda5072ce1956ba7f7b9d8f4a63ab7d005f5e936dda5dff37
 
 RUN amazon-linux-extras install python3.8
 
