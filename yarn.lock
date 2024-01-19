@@ -793,10 +793,10 @@ prettier-plugin-package@1.4.0:
   resolved "https://registry.yarnpkg.com/prettier-plugin-package/-/prettier-plugin-package-1.4.0.tgz#cd5843bce8c397ae1cefcbff1d5f2083a754219f"
   integrity sha512-jy8UjgHadyznzWfunyjPQPqE2Y92TVF3Q0O829X6pk/ARoKn0vtSu+mtKIsmikZYb2N50mV6vRIqCf19XdOdIg==
 
-prettier@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.1.tgz#6ba9f23165d690b6cbdaa88cb0807278f7019848"
-  integrity sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==
+prettier@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.2.0.tgz#aedf3dfb42c00ee4eda533c1380f7d9624f768b8"
+  integrity sha512-/vBUecTGaPlRVwyZVROVC58bYIScqaoEJzZmzQXXrZOzqn0TwWz0EnOozOlFO/YAImRnb7XsKpTCd3m1SjS2Ww==
 
 read-pkg@^3.0.0:
   version "3.0.0"
