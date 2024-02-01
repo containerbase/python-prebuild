@@ -1,16 +1,10 @@
 node_modules/
-.vs/
-dist/
-coverage/
-.cache/
-data/
-yarn.lock
+/coverage/
+/dist/
+/bin/
+/tmp/
+/html/
 
-.editorconfig
-.*ignore
-.npmrc
-.yarnrc
-.yarnclean
-
-*.snap
-*.sh
+# pnpm
+pnpm-lock.yaml
+/.pnpm-store

@@ -6,7 +6,7 @@ on:
       - main
 
   pull_request:
-  
+
   schedule:
     - cron: '0 1 * * *'
 
@@ -14,8 +14,22 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
   cancel-in-progress: true
 
+env:
+  HUSKY: 0
+
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - run: corepack enable
+      - run: pnpm install
+      - run: pnpm prettier
+
   build:
+    needs:
+      - lint
     runs-on: ubuntu-latest
 
     strategy:
