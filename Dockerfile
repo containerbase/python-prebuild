@@ -6,8 +6,8 @@ ARG DISTRO=focal
 #--------------------------------------
 # base images
 #--------------------------------------
-FROM ubuntu:focal@sha256:e4c02475c7c9c43f8f5bf595d5260a84e1b44e49d9c5ece6d3e5dc6a0a5835a0 as build-focal
-FROM ubuntu:jammy@sha256:39ab14240b6da1cb8c34bd4f498b90b7cf3b6c6aa2d524f45c9501038d6b2709 as build-jammy
+FROM ubuntu:focal@sha256:0b897358ff6624825fb50d20ffb605ab0eaea77ced0adb8c6a4b756513dec6fc as build-focal
+FROM ubuntu:jammy@sha256:19478ce7fc2ffbce89df29fea5725a8d12e57de52eb9ea570890dc5852aac1ac as build-jammy
 
 
 #--------------------------------------
