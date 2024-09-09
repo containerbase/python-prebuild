@@ -10,7 +10,7 @@ FROM scratch
 
 # EOL 2024-10
 # renovate: datasource=docker depName=python versioning=docker
-ENV PYTHON_VERSION=3.8.19
+ENV PYTHON_VERSION=3.8.20
 
 # EOL 2025-10
 # renovate: datasource=docker depName=python versioning=docker
