@@ -38,6 +38,7 @@ jobs:
       matrix:
         distro:
           - focal
+          - jammy
         arch:
           - x86_64
           - aarch64
