@@ -3,5 +3,6 @@
   "depName": "python",
   "datasource": "docker",
   "versioning": "docker",
+  "startVersion": "2.7.18",
   "versions": ["2.7.18", "3.6.15"]
 }
