@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - maint/**
 
   pull_request:
   merge_group:
@@ -53,5 +54,4 @@ jobs:
         uses: containerbase/internal-tools@f2d23019110923e232236b448e355d68194a2c73 # v3.4.33
         with:
           command: binary-builder
-          dry-run: ${{github.ref != 'refs/heads/main'}}
           token: ${{ secrets.GITHUB_TOKEN }}
