@@ -15,17 +15,18 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
   cancel-in-progress: true
 
-env:
-  HUSKY: 0
+permissions:
+  contents: read
 
 jobs:
   lint:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - run: corepack enable
-      - run: pnpm install
+      - name: ⚙️ Setup
+        uses: containerbase/internal-tools/setup@fcbde3cdedad26eabf59776988e2a4b47fee98e5 # v3.7.0
+        with:
+          save-cache: true
       - run: pnpm prettier
 
   build:
@@ -33,6 +34,9 @@ jobs:
       - lint
     runs-on: ${{ matrix.arch.os }}
     name: build (${{ matrix.distro }}, ${{ matrix.arch.name }})
+
+    permissions:
+      contents: write
 
     strategy:
       matrix:
@@ -51,6 +55,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          show-progress: false
 
       - name: binary-builder
         uses: containerbase/internal-tools@1d0c5b3aabe4a10a264d309f65ecbbd83d0e672e # v3.5.21
