@@ -7,7 +7,7 @@ ARG DISTRO=focal
 # base images
 #--------------------------------------
 FROM ghcr.io/containerbase/ubuntu:20.04@sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214 as build-focal
-FROM ghcr.io/containerbase/ubuntu:22.04@sha256:67cadaff1dca187079fce41360d5a7eb6f7dcd3745e53c79ad5efd8563118240 as build-jammy
+FROM ghcr.io/containerbase/ubuntu:22.04@sha256:01a3ee0b5e413cefaaffc6abe68c9c37879ae3cced56a8e088b1649e5b269eee as build-jammy
 
 
 #--------------------------------------
