@@ -24,7 +24,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: ⚙️ Setup
-        uses: containerbase/internal-tools/setup@c0acd0557771a8c771b458770c0956193ee916e4 # v4.6.42
+        uses: containerbase/internal-tools/setup@48c73faf3c402a86025b22e5cf762fdc4c90a940 # v4.6.43
         with:
           save-cache: true
       - run: pnpm prettier
@@ -59,7 +59,7 @@ jobs:
           show-progress: false
 
       - name: binary-builder
-        uses: containerbase/internal-tools@c0acd0557771a8c771b458770c0956193ee916e4 # v4.6.42
+        uses: containerbase/internal-tools@48c73faf3c402a86025b22e5cf762fdc4c90a940 # v4.6.43
         with:
           command: binary-builder
           dry-run: ${{github.ref != 'refs/heads/main'}}
