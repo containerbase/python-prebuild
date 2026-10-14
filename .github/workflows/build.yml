@@ -27,7 +27,7 @@ jobs:
         uses: containerbase/internal-tools/setup@99277e09a125ec270a00ca46569ed2903478f3ef # v5.1.0
         with:
           save-cache: true
-      - run: pnpm prettier
+      - run: pnpm oxfmt
 
   build:
     needs:
