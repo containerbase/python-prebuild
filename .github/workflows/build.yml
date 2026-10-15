@@ -30,7 +30,7 @@ jobs:
       MISE_EXEC_AUTO_INSTALL: 'false'
     steps:
       - name: ⚙️ Setup
-        uses: containerbase/internal-tools/setup@042745e56be41e18a1d5136303845573dba9bc3a # v5.2.0
+        uses: containerbase/internal-tools/setup@065c7cd31765ae2015249a42ec1e3798e462b5d4 # v5.3.1
         with:
           save-cache: true
       - run: pnpm oxfmt
@@ -81,7 +81,7 @@ jobs:
           show-progress: false
 
       - name: binary-builder
-        uses: containerbase/internal-tools@042745e56be41e18a1d5136303845573dba9bc3a # v5.2.0
+        uses: containerbase/internal-tools@065c7cd31765ae2015249a42ec1e3798e462b5d4 # v5.3.1
         with:
           command: binary-builder
           dry-run: ${{github.ref != 'refs/heads/main'}}
