@@ -4,8 +4,7 @@ set -e
 
 VERSION=${1}
 
-# shellcheck disable=SC1091
-CODENAME=$(. /etc/os-release && echo "${VERSION_CODENAME}")
+CODENAME=$(awk -F= '$1 == "VERSION_CODENAME" { gsub(/"/, "", $2); print $2 }' /etc/os-release)
 
 NAME=python
 ARCH=$(uname -p)
