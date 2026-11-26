@@ -1,0 +1,9 @@
+{
+  "image": "python",
+  "depName": "python",
+  "datasource": "docker",
+  "versioning": "docker",
+  "startVersion": "3.15.2",
+  "ignoredVersions": [],
+  "reverse": true
+}
