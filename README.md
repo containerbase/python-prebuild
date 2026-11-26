@@ -21,7 +21,7 @@ CI runs jactionlint and zizmor through mise in the `lint` job, and the commit ho
 Build the image
 
 ```bash
-docker build -t builder --build-arg APT_PROXY=http://apt-proxy:3142 --build-arg DISTRO=focal .
+docker build -t builder --build-arg APT_PROXY=http://apt-proxy:3142 --build-arg DISTRO=jammy .
 ```
 
 Test the image
@@ -36,6 +36,8 @@ Optional environment variables
 
 | Name        | Description                                                  | Default   |
 | ----------- | ------------------------------------------------------------ | --------- |
-| `DISTRO`    | Set an ubuntu base distro, `focal` and `jammy` are supported | `focal`   |
+| `DISTRO`    | Set an ubuntu base distro, `jammy` and `noble` are supported | `jammy`   |
 | `APT_PROXY` | Set an APT http proxy for installing build deps              | `<empty>` |
 | `DEBUG`     | Show verbose php build output                                | `<empty>` |
+
+Ubuntu 24.04 (`noble`) only gets versions released since it was added.
